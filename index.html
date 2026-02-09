@@ -1,1 +1,44 @@
-<script>document.write(decodeURIComponent(escape(atob("PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KPHRpdGxlPlBhZ2UgVGl0bGU8L3RpdGxlPgo8L2hlYWQ+Cjxib2R5PgoKCjxkaXYgY2xhc3M9InRvcG5hdiI+CiAgPGlucHV0IHR5cGU9InBhc3N3b3JkIiBwbGFjZWhvbGRlcj0iNjciIGlkPSJwYXNzIj4KPC9kaXY+CjxidXR0b24gb25jbGljaz0iZW50ZXIoKSI+ZW50ZXI8L2J1dHRvbj4KPHNjcmlwdD4KCgphc3luYyBmdW5jdGlvbiBPcGVuc2l0ZSgpewoKY29uc3Qgd2luID0gd2luZG93Lm9wZW4oImFib3V0OmJsYW5rIiwgIl9ibGFuayIpCgpmZXRjaCgiaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL0pKdGhlY29vbGVzdC9nb29uQG1hc3Rlci9zaW5nbGVmaWxlLmh0bWw/dD0iK0RhdGUubm93KCkpCi50aGVuKHJlc3BvbnNlID0+IHJlc3BvbnNlLnRleHQoKSkKLnRoZW4odGV4dCA9PiB7Cndpbi5kb2N1bWVudC5vcGVuKCk7Cndpbi5kb2N1bWVudC53cml0ZSh0ZXh0KTsKd2luLmRvY3VtZW50LmNsb3NlKCk7IAp9KTsKCn0KCgpsZXQgdGVzdDsKZnVuY3Rpb24gZW50ZXIoKXsKbGV0IHRlc3QgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicGFzcyIpLnZhbHVlOwoKaWYodGVzdCA9PSAiRW1vU3BvbmdlQm9iISIpewogICAgT3BlbnNpdGUoKQp9IGVsc2UgewogICAgZG9jdW1lbnQud3JpdGUoIjY3Iik7Cn0KfQo8L3NjcmlwdD4KCjwvYm9keT4KPC9odG1sPg=="))));</script>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+
+<div class="topnav">
+  <input type="Password" placeholder="Type Here" id="pass">
+</div>
+<button onclick="enter()">enter</button>
+<script>
+
+
+async function Opensite(){
+
+const win = window.open("about:blank", "_blank")
+
+fetch("https://cdn.jsdelivr.net/gh/JJthecoolest/goon@master/singlefile.html?t="+Date.now())
+.then(response => response.text())
+.then(text => {
+win.document.open();
+win.document.write(text);
+win.document.close(); 
+});
+
+}
+
+
+let test;
+function enter(){
+let test = document.getElementById("pass").value;
+
+if(test == "EmoSpongeBob!"){
+    Opensite()
+} else {
+    document.write("Hi");
+}
+}
+</script>
+
+</body>
+</html>
